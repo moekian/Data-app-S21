@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1C6A245C2655399E000C3C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A245B2655399E000C3C10 /* AppDelegate.swift */; };
 		1C6A245E2655399E000C3C10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A245D2655399E000C3C10 /* SceneDelegate.swift */; };
-		1C6A24602655399E000C3C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A245F2655399E000C3C10 /* ViewController.swift */; };
+		1C6A24602655399E000C3C10 /* BookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A245F2655399E000C3C10 /* BookVC.swift */; };
 		1C6A24632655399E000C3C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A24612655399E000C3C10 /* Main.storyboard */; };
 		1C6A2465265539A1000C3C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A2464265539A1000C3C10 /* Assets.xcassets */; };
 		1C6A2468265539A1000C3C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A2466265539A1000C3C10 /* LaunchScreen.storyboard */; };
+		1C6A24722655452E000C3C10 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A24712655452E000C3C10 /* Book.swift */; };
+		1C6A2474265546F5000C3C10 /* BookListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A2473265546F5000C3C10 /* BookListTVC.swift */; };
+		1C6A247726555F3F000C3C10 /* BookDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A247526555F3F000C3C10 /* BookDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C6A24582655399E000C3C10 /* Data app S21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data app S21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6A245B2655399E000C3C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C6A245D2655399E000C3C10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C6A245F2655399E000C3C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C6A245F2655399E000C3C10 /* BookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookVC.swift; sourceTree = "<group>"; };
 		1C6A24622655399E000C3C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C6A2464265539A1000C3C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6A2467265539A1000C3C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C6A2469265539A1000C3C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6A24712655452E000C3C10 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1C6A2473265546F5000C3C10 /* BookListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTVC.swift; sourceTree = "<group>"; };
+		1C6A247626555F3F000C3C10 /* BookDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		1C6A245A2655399E000C3C10 /* Data app S21 */ = {
 			isa = PBXGroup;
 			children = (
+				1C6A24702655450A000C3C10 /* Model */,
 				1C6A245B2655399E000C3C10 /* AppDelegate.swift */,
 				1C6A245D2655399E000C3C10 /* SceneDelegate.swift */,
-				1C6A245F2655399E000C3C10 /* ViewController.swift */,
+				1C6A246F265544F4000C3C10 /* VC */,
 				1C6A24612655399E000C3C10 /* Main.storyboard */,
 				1C6A2464265539A1000C3C10 /* Assets.xcassets */,
 				1C6A2466265539A1000C3C10 /* LaunchScreen.storyboard */,
 				1C6A2469265539A1000C3C10 /* Info.plist */,
 			);
 			path = "Data app S21";
+			sourceTree = "<group>";
+		};
+		1C6A246F265544F4000C3C10 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A245F2655399E000C3C10 /* BookVC.swift */,
+				1C6A2473265546F5000C3C10 /* BookListTVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1C6A24702655450A000C3C10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A24712655452E000C3C10 /* Book.swift */,
+				1C6A247526555F3F000C3C10 /* BookDataModel.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6A24602655399E000C3C10 /* ViewController.swift in Sources */,
+				1C6A24722655452E000C3C10 /* Book.swift in Sources */,
+				1C6A2474265546F5000C3C10 /* BookListTVC.swift in Sources */,
+				1C6A24602655399E000C3C10 /* BookVC.swift in Sources */,
 				1C6A245C2655399E000C3C10 /* AppDelegate.swift in Sources */,
+				1C6A247726555F3F000C3C10 /* BookDataModel.xcdatamodeld in Sources */,
 				1C6A245E2655399E000C3C10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C6A247526555F3F000C3C10 /* BookDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C6A247626555F3F000C3C10 /* BookDataModel.xcdatamodel */,
+			);
+			currentVersion = 1C6A247626555F3F000C3C10 /* BookDataModel.xcdatamodel */;
+			path = BookDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1C6A24502655399E000C3C10 /* Project object */;
 }
